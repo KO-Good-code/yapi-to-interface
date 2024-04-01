@@ -1,0 +1,83 @@
+.to-ts{
+  color: rgba(0,0,0,.65);
+  position: fixed;
+  right: 52px;
+  top: 200px;
+  background-color: #e9e9e9;
+  border-radius: 2px;
+  /* box-shadow: 0 0 6px -1px rgba(26,192,128,.5); */
+  padding: 8px 12px;
+  width: 142px;
+  z-index: 999;
+}
+.to-ts > button {
+  cursor: pointer;
+}
+.to-ts-title{
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f0f0f0
+}
+
+.has-export-wrapper {
+  font-size: 10px;
+  margin: 5px 0;
+  vertical-align: middle;
+}
+.has-export-wrapper .has-export-toggle{
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+.to-ts-res-btn{
+  border-radius: 2px;
+  background-color: red;
+  color: #fff;
+  margin-right: 8px;
+  display: block;
+}
+
+.to-ts-req-btn, .to-ts-query-btn{
+  border-radius: 2px;
+  background-color: green;
+  color: #fff;
+  display: block;
+  margin: 10px 0;
+}
+
+.to-ts-query-btn {
+  background: yellow;
+  color: #000;
+  margin: 0;
+}
+
+.to-ts-msg{
+  position: fixed;
+  top: 150px;
+  right: 0;
+  color: #fff;
+  background-color: #666;
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+  padding: 6px 12px 6px 7px;
+  height: 30px;
+  opacity: .8;
+  box-sizing: border-box;
+  border-radius: 15px 0 0 15px;
+  transition: all .4s ease-in
+}
+
+.to-ts-msg.is-leaving{
+  opacity: 0;
+  transform: translateX(100%)
+}
+
+.to-ts-msg div{
+  flex: 1
+}
+
+.to-ts-msg img{
+  width: 20px;
+  height: 20px;
+  margin-right: 12px
+}
