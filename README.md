@@ -1,8 +1,8 @@
-## za-api-to-interface
+## yapi-to-interface
 
 项目引入ts之后，接口的返回值和参数也要有对应数据的interface定义，如果自己写太繁琐，而且容易出错，所以开发一个谷歌插件，利用递归遍历进行自动转换，支持嵌套数据
 数据：
-![image](https://photo.zastatic.com/images/common-cms/it/20220106/1641458852002_704649_t.png)
+
 转换后：
 
 ```
