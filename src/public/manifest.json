@@ -1,5 +1,5 @@
 {
-  "name": "zaToTs",
+  "name": "apiToTs",
   "description": "将接口参数与返回值转换为ts接口定义interface",
   "homepage_url": "http://chrome.google.com/webstore",
   "version": "0.0.1",

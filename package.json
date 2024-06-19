@@ -1,5 +1,5 @@
 {
-  "name": "za-api-to-interface",
+  "name": "yapi-to-interface",
   "version": "1.0.0",
   "description": "自动生成interface",
   "main": "src/content.ts",
@@ -8,7 +8,7 @@
     "dev": "rollup --config rollup.config.js",
     "build": "rollup --config rollup.config.js --environment produce"
   },
-  "author": "胡江林",
+  "author": "Mikey",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.2",

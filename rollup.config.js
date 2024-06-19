@@ -11,7 +11,7 @@ const config = {
   output: {
     file: path.resolve('dist/content.js'),
     format: 'umd',
-    name: 'za-api-to-interface',
+    name: 'yapi-to-interface',
     strict: false,
   },
   plugins: [
