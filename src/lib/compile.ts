@@ -117,8 +117,9 @@ export default class Compile {
     interFaceName = firstUpperCase(interFaceName);
     for(let key in source) {
       // interface的名字
-      const name = `${interFaceName}${firstUpperCase(key)}`
-      const { type, description, properties, items, required } = source[key]
+      const name = `${interFaceName}${firstUpperCase(key)}`;
+      console.log(source[key], key);
+      const { type, description, properties, items, required=[] } = source[key]
 
       // required属性表示必选，不做处理
       if (key !== 'required') {
@@ -148,7 +149,7 @@ export default class Compile {
           case 'object':
           case 'array':
               cloneData[key].type = `${name}[]`
-              const { properties, required } = items;
+              const { properties, required = [] } = items;
               // items.properties.required = required;
               this.jsonSchemaToTsInterface({ ...properties, required }, name)
               break

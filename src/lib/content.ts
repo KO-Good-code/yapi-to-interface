@@ -160,7 +160,7 @@ export default class Content {
             if (result.res_body_is_json_schema) {
               // 当res_body_type字段为json时取resBody.properties，为raw时不做处理，就是resBody
               if (result.res_body_type === 'json') {
-                const resRequireds = resBody.required;
+                const resRequireds = resBody.required || [];
                 resBody = resBody.properties;
                 resBody.required = resRequireds;
                 compileType = 'json_schema'
@@ -175,7 +175,7 @@ export default class Content {
             } else {  
               // json有两种，一种是res_body_is_json_schema为true，一种是false
               if (result.req_body_is_json_schema) {
-                const resRequireds = resBody.required;
+                const resRequireds = resBody.required || [];
                 resBody = resBody.properties;
                 resBody.required = resRequireds;
                 compileType = 'json_schema'
