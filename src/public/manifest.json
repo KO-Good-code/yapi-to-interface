@@ -3,28 +3,20 @@
   "description": "将接口参数与返回值转换为ts接口定义interface",
   "homepage_url": "http://chrome.google.com/webstore",
   "version": "0.0.1",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "minimum_chrome_version": "31",
   "incognito": "split",
   "permissions": [
-    "http://*/*",
-    "https://*/*"
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.yapi/*"
   ],
   "icons": {
     "16": "/assets/img/16x16.png",
     "32": "/assets/img/32x32.png",
     "48": "/assets/img/48x48.png",
     "128": "/assets/img/128x128.png"
-  },
-  
-  "browser_action": {
-    "default_icon": {
-      "16": "/assets/img/16x16.png",
-      "32": "/assets/img/32x32.png",
-      "48": "/assets/img/48x48.png",
-      "128": "/assets/img/128x128.png"
-    },
-    "default_title": "__MSG_appName__"
   },
   "content_scripts": [
     {

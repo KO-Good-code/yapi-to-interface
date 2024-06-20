@@ -135,7 +135,8 @@ export default class Content {
           const r = result[btnType[type].field];
           const a = typeof r === "object" ? JSON.stringify(r): r;
           // 不能JSON.parse，因为存在注释, rollup强烈反对使用eval，用new Function代替
-          let resBody = new Function('return ' + a)()
+          // let resBody = new Function(`return \`${a}\`;`)()
+          let resBody = a ? JSON.parse(a): {};
           let compileType = ''
           // 老接口有.do，需要去掉
           const splitPath = result.path.replace('.do', '').split('/')
